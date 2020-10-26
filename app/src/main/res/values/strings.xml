@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">LanguageSwitchingPage</string>
-    <string name="ок">ОК</string>
+    <string name="app_name">Language Switching Page</string>
+    <string name="choose_language">choose language:</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="greeting">Hi</string>
     <string-array name="locale">
         <item>Русский</item>
         <item>English</item>

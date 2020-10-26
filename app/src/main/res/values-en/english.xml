@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Language Switching Page</string>
+    <string name="choose_language">choose language:</string>
+    <string name="ok">OK</string>
+    <string name="greeting">It says something in English</string>
+</resources>

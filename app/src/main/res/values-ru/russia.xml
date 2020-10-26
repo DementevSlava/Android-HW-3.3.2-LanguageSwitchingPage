@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Страница переключения языка</string>
+    <string name="choose_language">выбор языка:</string>
+    <string name="greeting">Здесь написано что то по русски</string>
+</resources>

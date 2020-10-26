@@ -1,14 +1,12 @@
 package com.dementev.languageswitchingpage;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
@@ -25,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
         init();
     }
 
-    private void init(){
+    private void init() {
         spinner = findViewById(R.id.spinner);
         okBtn = findViewById(R.id.okBtn);
 
         okBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (spinner.getSelectedItem().equals("Русский")){
+                if (spinner.getSelectedItem().equals("Русский")) {
                     locale = new Locale("ru");
                 } else locale = new Locale("en");
                 Configuration configuration = new Configuration();
