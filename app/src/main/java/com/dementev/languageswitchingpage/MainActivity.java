@@ -27,17 +27,14 @@ public class MainActivity extends AppCompatActivity {
         spinner = findViewById(R.id.spinner);
         okBtn = findViewById(R.id.okBtn);
 
-        okBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (spinner.getSelectedItem().equals("Русский")) {
-                    locale = new Locale("ru");
-                } else locale = new Locale("en");
-                Configuration configuration = new Configuration();
-                configuration.setLocale(locale);
-                getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
-                recreate();
-            }
+        okBtn.setOnClickListener(v -> {
+            if (spinner.getSelectedItem().equals("Русский")) {
+                locale = new Locale("ru");
+            } else locale = new Locale("en");
+            Configuration configuration = new Configuration();
+            configuration.setLocale(locale);
+            getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
+            recreate();
         });
 
     }
